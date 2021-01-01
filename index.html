@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>BenHok Web App</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<!-- header -->
+		<header id="main-header">
+		<div class="container">
+			<h1><em>BenHok Delivery</em></h1>
+		</div>
+		</header>
+
+		<section id="showcase">
+		<div class="container">
+			<h1><em>fresh japanese food everyday...</em>
+			</h1>
+			<a href="https://www.freevector.com/japanese-wave-seamless-pattern-28767#">Picture by FreeVector.com</a>
+		</div>
+		</section>
+
+		<section id ="account"><!-- open account section-->
+			<div class="title">Akun Anda</div>
+			<!-- LOGIN LOGOUT BUTTONS -->
+            <div class="buttonGroup">
+                <button id="liffLoginButton">Log in</button>
+                <button id="liffLogoutButton">Log out</button>
+            </div>
+            <div id="status-message">Halo! Silakan Login Menggunakan akun LINE anda.</div>
+
+			<!-- Product #1 -->
+			<div class="item">
+
+		</section> <!-- close account section-->
+
+		<div id="cart"><!-- open cart-->
+			<div class="title">Pesanan Anda</div>
+
+			<!-- Product #1 -->
+			<div class="item">
+				<div class="image1">
+				  <!--img src="img/food.jpg" alt="makanan" /-->
+				</div>
+
+				<div class="description">
+					<span>Paket Bento A</span>
+					<span>Nasi, Ebi Furai</span>
+					<span>1 Box</span>
+				</div>
+
+				<div class="quantity">
+					<button class="quant-btn" id="plus-btn1">+</button>
+					<input type="text" value="0" id="foodquantity">
+					<button class="quant-btn" id="minus-btn1">-</button>
+				</div>
+
+				<div class="total-price" id="price1">Rp30.000</div>
+			</div>
+
+			<!-- Product #2 -->
+			<div class="item">
+				<div class="image2">
+				  <!--img src="img/food.jpg" alt="makanan" /-->
+				</div>
+
+				<div class="description">
+					<span>Ocha</span>
+					<span>Teh Jepang</span>
+					<span>1 Gelas</span>
+				</div>
+
+				<div class="quantity">
+					<button class="quant-btn" id = "plus-btn2">+</button>
+					<input type="text" name="name" value="0" id="drinkquantity">
+					<button class="quant-btn" id = "minus-btn2">-</button>
+				</div>
+
+				<div class="total-price" id="price2">Rp10.000</div>
+			</div>
+
+			<div class="order">
+				<button class="order-btn" id="order-btn1">Order</button>
+			</div>
+
+		</section> <!-- close cart-->
+
+		<footer id="main-footer">
+			<div class="container"></div>
+			<p>Copyright &copy; 2020 Irfan Budi Satria</p>
+			</div>
+		</footer>
+
+		<!-- LIFF INIT ERROR -->
+		<div id="liffInitErrorMessage" class="hidden">
+		    <p>Something went wrong with LIFF initialization.</p>
+		    <p>LIFF initialization can fail if a user clicks "Cancel" on the "Grant permission" screen, or if an error occurs in the process of <code>liff.init()</code>.</p>
+		</div>
+		<!-- NODE.JS LIFF ID ERROR -->
+		<div id="nodeLiffIdErrorMessage" class="hidden">
+		    <p>Unable to receive the LIFF ID as an environment variable.</p>
+		</div>
+		<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+		<script src="liff-starter.js"></script>
+		<script src="main.js"></script>
+	</body>
+
+</html>	
