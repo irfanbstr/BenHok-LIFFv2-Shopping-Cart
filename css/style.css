@@ -204,6 +204,10 @@ body{
 	margin-top:20px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (max-width: 800px) {
   .shopping-cart {
     width: 100%;
