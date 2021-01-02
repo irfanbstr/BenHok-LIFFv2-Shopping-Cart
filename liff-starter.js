@@ -132,7 +132,7 @@ function registerButtonHandlers() {
         } else {
             console.log('sending message!!')
             price = parseInt(n_food.value)*foodprice + parseInt(n_drink.value)*drinkprice;
-            message_text = `Kamu memesan Makanan berjumlah ${parseInt(n_food.value)} dan Minuman berjumlah ${parseInt(n_drink.value)}, dengan total harga Rp${price}.`;
+            message_text = `Terimakasih telah memesan BenHok Delivery\nPaket Bento A berjumlah ${parseInt(n_food.value)}\nOcha berjumlah ${parseInt(n_drink.value)}\nTotal Harga: Rp${price}.`;
             liff.sendMessages([{
                 'type': 'text',
                 'text': message_text
