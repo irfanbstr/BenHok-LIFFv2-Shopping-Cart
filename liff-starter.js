@@ -130,9 +130,12 @@ function registerButtonHandlers() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
+            console.log('sending message!!')
+            price = parseInt(n_food.value)*foodprice + parseInt(n_drink.value)*drinkprice;
+            message_text = `Kamu memesan Makanan berjumlah ${parseInt(n_food.value)} dan Minuman berjumlah ${parseInt(n_drink.value)}, dengan total harga Rp${price}.`;
             liff.sendMessages([{
                 'type': 'text',
-                'text': "Anda telah menggunakan fitur Send Message!"
+                'text': message_text
             }]).then(function() {
                 window.alert('Ini adalah pesan dari fitur Send Message');
             }).catch(function(error) {
