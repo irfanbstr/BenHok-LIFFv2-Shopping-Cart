@@ -47,22 +47,20 @@ body{
 
 .image1 {
 	background: url('../img/food.jpg');
-	width: 100%;
-	height: 100%;
+	width: 200px;
+	height: 200px;
 	background-size: 100% 100%;
 	display: block;
-	margin: 0 auto;
-	padding: 10px;
+	margin: 20px auto;
 }
 
 .image2 {
 	background: url('../img/drink.jpg'); 
-	width: 100%;
-	height: 100%;
+	width: 200px;
+	height: 200px;
 	background-size: 100% 100%;
 	display: block;
-	margin: 0 auto;
-	padding: 10px;
+	margin: 20px auto;
 }
 
 #account {
@@ -124,8 +122,11 @@ body{
 }
  
 .item {
-	padding: 20px 30px;
+	margin: 0 auto;
 	height: 210px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 	display: flex;
 }
  
@@ -187,7 +188,6 @@ body{
 	height: 50px;
 	background-color: #E1E8EE;
 	border-radius: 6px;
-	/*border: none;*/
 	cursor: pointer;
 	font-size: 20px;
 }
