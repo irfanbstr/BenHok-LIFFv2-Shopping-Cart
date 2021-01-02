@@ -156,4 +156,4 @@ function toggleElement(elementId) {
     } else {
         elem.style.display = 'block';
     }
-}
+};
