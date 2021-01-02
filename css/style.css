@@ -207,19 +207,3 @@ body{
 .hidden {
     display: none;
 }
-
-@media (max-width: 800px) {
-  .shopping-cart {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .quantity,
-  .description {
-    width: 100%;left:;
-    margin: 6px 0;
-  }
-  .buttons {
-    margin-right: 20px;
-  }
-}
