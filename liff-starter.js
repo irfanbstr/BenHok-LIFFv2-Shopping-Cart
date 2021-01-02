@@ -146,7 +146,7 @@ function registerButtonHandlers() {
         }
     });
 
-    document.getElementById('#order-btn1').addEventListener('click', function() {
+    document.getElementById('order-btn1').addEventListener('click', function() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
