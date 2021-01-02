@@ -47,15 +47,15 @@ body{
 
 .image1 {
 	background: url('../img/food.jpg');
-	width: 20vw;
-	height: 20vw;
+	width: 200px;
+	height: 200px;
 	background-size: 100% 100%;
 }
 
 .image2 {
 	background: url('../img/drink.jpg'); 
-	width: 20vw;
-	height: 20vw;
+	width: 200px;
+	height: 200px;
 	background-size: 100% 100%;
 }
 
@@ -120,7 +120,7 @@ body{
 .item {
 	padding: 20px 30px;
 	height: 210px;
-	margin-bottom: 50px;
+	display: flex;
 }
  
 .description {
@@ -206,4 +206,26 @@ body{
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 480px) {
+	.account {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.cart {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.quantity,
+	.description {
+		width: 100%;left:;
+		margin: 6px 0;
+	}
+	.buttons {
+		margin-right: 20px;
+	}
 }
