@@ -69,10 +69,30 @@ function initializeApp() {
     // check if the user is logged in/out, and disable inappropriate button
     if (liff.isLoggedIn()) {
         document.getElementById('liffLoginButton').disabled = true;
-        document.getElementById('loginmessage').textContent = "Halo Irfan!";
+
+        liff.getProfile().then(function(profile) {
+            username = profile.displayName;
+
+            const profilePictureDiv = document.getElementById('profilePictureDiv');
+            if (profilePictureDiv.firstElementChild) {
+                profilePictureDiv.removeChild(profilePictureDiv.firstElementChild);
+            }
+            const img = document.createElement('img');
+            img.src = profile.pictureUrl;
+            img.alt = 'Profile Picture';
+            profilePictureDiv.appendChild(img);
+            document.getElementById("profileInfo").classList.remove('hidden');
+
+        }).catch(function(error) {
+            window.alert('Error getting profile: ' + error);
+        });
+
+        document.getElementById('loginmessage').textContent = `Halo ${username}! Mau makan apa hari ini?`;
+
     } else {
         document.getElementById('liffLogoutButton').disabled = true;
         document.getElementById('loginmessage').textContent = "Halo, silakan login terlebih dahulu!";
+        document.getElementById("profileInfo").classList.add('hidden');
     }
 }
  
@@ -92,6 +112,7 @@ function displayIsInClientInfo() {
         document.getElementById('liffLoginButton').classList.toggle('hidden');
         document.getElementById('liffLogoutButton').classList.toggle('hidden');
         document.getElementById('isInClientMessage').textContent = 'You are opening the app in the in-app browser of LINE.';
+    
     } else {
         document.getElementById('isInClientMessage').textContent = 'You are opening the app in an external browser.';
     }
@@ -148,7 +169,7 @@ function registerButtonHandlers() {
 function sendAlertIfNotInClient() {
     alert('This button is unavailable as LIFF is currently being opened in an external browser.');
 }
- 
+
 /**
 * Toggle specified element
 * @param {string} elementId The ID of the selected element
