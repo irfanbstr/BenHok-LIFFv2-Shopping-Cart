@@ -69,9 +69,10 @@ function initializeApp() {
     // check if the user is logged in/out, and disable inappropriate button
     if (liff.isLoggedIn()) {
         document.getElementById('liffLoginButton').disabled = true;
+        document.getElementById('loginmessage').textContent = "Halo Irfan!"
     } else {
         document.getElementById('liffLogoutButton').disabled = true;
-    }
+        document.getElementById('loginmessage').textContent = "Halo, silakan login dulu!"
 }
  
 /**
@@ -98,7 +99,7 @@ function displayIsInClientInfo() {
 function registerButtonHandlers() {
     document.getElementById('openWindowButton').addEventListener('click', function() {
         liff.openWindow({
-            url: 'https://example.herokuapp.com/', // Isi dengan Endpoint URL aplikasi web Anda
+            url: 'https://benhok.herokuapp.com/', // Isi dengan Endpoint URL aplikasi web Anda
             external: true
         });
     });
