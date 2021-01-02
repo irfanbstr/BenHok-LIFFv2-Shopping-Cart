@@ -74,6 +74,16 @@ body{
 	background: #FFFFFF;
 }
 
+#profilePictureDiv {
+    text-align: center;
+}
+
+#profileImageDiv {
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+}
+
 #status-message{
 	text-align: center;
 	padding-top: 10px;
@@ -109,15 +119,6 @@ body{
 	border-radius: 6px;
 }
 
-#profilePictureDiv {
-    text-align: center;
-}
-
-#profileImageDiv {
-    height: 100px;
-    width: 100px;
-}
-
 
 #cart {
 	height: auto;
@@ -127,7 +128,7 @@ body{
 
 .title {
 	height: 30px;
-	border-bottom: 1px solid #E1E8EE;
+	border-bottom: 1px solid #000;
 	padding: 20px 30px;
 	color: #5E6977;
 	font-size: 18px;
@@ -138,11 +139,12 @@ body{
 	margin: 0 auto;
 	height: 210px;
 	display: block;
+	border-bottom: 1px solid #555;
+	text-align: center;
 }
  
 .description {
 	padding-top: 10px;
-	margin-right: 30px;
 	width: 115px;
 }
  
@@ -165,7 +167,6 @@ body{
 
 .quantity {
   padding-top: 20px;
-  margin: 0 auto;
 }
 
 .quantity input {
