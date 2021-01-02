@@ -51,6 +51,7 @@ body{
 	height: 200px;
 	background-size: 100% 100%;
 	display: block;
+	margin: 20px auto;
 }
 
 .image2 {
@@ -59,6 +60,7 @@ body{
 	height: 200px;
 	background-size: 100% 100%;
 	display: block;
+	margin: 20px auto;
 }
 
 #account {
@@ -130,8 +132,8 @@ body{
  
 .description {
 	padding-top: 10px;
-	margin-right: 60px;
-	width: 115px;
+	margin-right: 10px;
+	width: 100px;
 }
  
 .description span {
@@ -174,6 +176,16 @@ body{
   cursor: pointer;
 }
 
+.total-price {
+  width: 80px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+  overflow:hidden;
+}
+
 .order{
 	padding-top: 10px;
 	align-items: center;
@@ -190,14 +202,6 @@ body{
 	font-size: 20px;
 }
 
-.total-price {
-  width: 80px;
-  padding-top: 25px;
-  text-align: center;
-  font-size: 16px;
-  color: #43484D;
-  font-weight: 300;
-}
 
 #main-footer{
 	background: #333;
