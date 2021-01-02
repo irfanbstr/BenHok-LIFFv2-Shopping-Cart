@@ -73,6 +73,7 @@ function initializeApp() {
     } else {
         document.getElementById('liffLogoutButton').disabled = true;
         document.getElementById('loginmessage').textContent = "Halo, silakan login terlebih dahulu!";
+    }
 }
  
 /**
