@@ -55,11 +55,11 @@ plusbtn2.addEventListener('click', (e) => {
     n_drink.value = `${num}`;
 });
 
-const orderbtn = document.querySelector('#order-btn1');
-orderbtn.addEventListener('click', (e) => {
-    e.preventDefault;
-    console.log('Clicking order!!')
-    price = parseInt(n_food.value)*foodprice + parseInt(n_drink.value)*drinkprice;
-    message_text = `Kamu memesan Makanan berjumlah ${parseInt(n_food.value)} dan Minuman berjumlah ${parseInt(n_drink.value)}, dengan total harga Rp${price}.`;
-    console.log(message_text);
-});
+// const orderbtn = document.querySelector('#order-btn1');
+// orderbtn.addEventListener('click', (e) => {
+//     e.preventDefault;
+//     console.log('Clicking order!!')
+//     price = parseInt(n_food.value)*foodprice + parseInt(n_drink.value)*drinkprice;
+//     message_text = `Kamu memesan Makanan berjumlah ${parseInt(n_food.value)} dan Minuman berjumlah ${parseInt(n_drink.value)}, dengan total harga Rp${price}.`;
+//     console.log(message_text);
+// });

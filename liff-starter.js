@@ -146,7 +146,7 @@ function registerButtonHandlers() {
         }
     });
 
-    document.getElementById('sendMessageButton').addEventListener('click', function() {
+    document.getElementById('#order-btn1').addEventListener('click', function() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
@@ -157,7 +157,7 @@ function registerButtonHandlers() {
                 'type': 'text',
                 'text': message_text
             }]).then(function() {
-                window.alert('Ini adalah pesan dari fitur Send Message');
+                window.alert('Terimakasih telah memesan Benhok Delivery!');
             }).catch(function(error) {
                 window.alert('Error sending message: ' + error);
             });
