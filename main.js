@@ -4,7 +4,6 @@ var message_text = '';
 var price = 0;
 const foodprice = 30000;
 const drinkprice = 10000;
-var username = ''
 
 const minusbtn1 = document.querySelector('#minus-btn1');
 minusbtn1.addEventListener('click', (e) => {

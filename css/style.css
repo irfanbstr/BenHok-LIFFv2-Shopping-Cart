@@ -45,6 +45,11 @@ body{
 	text-decoration: none;
 }
 
+#profilePictureDiv img{
+	height: 100px;
+	width: 100px;
+}
+
 .image1 {
 	background: url('../img/food.jpg');
 	width: 200px;

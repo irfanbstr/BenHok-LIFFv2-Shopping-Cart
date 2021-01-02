@@ -71,7 +71,8 @@ function initializeApp() {
         document.getElementById('liffLoginButton').disabled = true;
 
         liff.getProfile().then(function(profile) {
-            username = profile.displayName;
+            var username = profile.displayName;
+            document.getElementById('loginmessage').textContent = `Halo ${username}! Mau makan apa hari ini?`;
 
             const profilePictureDiv = document.getElementById('profilePictureDiv');
             if (profilePictureDiv.firstElementChild) {
@@ -86,8 +87,6 @@ function initializeApp() {
         }).catch(function(error) {
             window.alert('Error getting profile: ' + error);
         });
-
-        document.getElementById('loginmessage').textContent = `Halo ${username}! Mau makan apa hari ini?`;
 
     } else {
         document.getElementById('liffLogoutButton').disabled = true;
