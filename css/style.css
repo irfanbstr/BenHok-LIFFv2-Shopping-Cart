@@ -47,15 +47,15 @@ body{
 
 .image1 {
 	background: url('../img/food.jpg');
-	min-width: 100px;
-	height: 200px;
+	width: 20vw;
+	height: 20vw;
 	background-size: 100% 100%;
 }
 
 .image2 {
 	background: url('../img/drink.jpg'); 
-	min-width: 100px;
-	height: 200px;
+	width: 20vw;
+	height: 20vw;
 	background-size: 100% 100%;
 }
 
