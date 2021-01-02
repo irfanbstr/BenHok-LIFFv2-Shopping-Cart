@@ -60,9 +60,14 @@ body{
 }
 
 #account {
+	width: 700px;
 	height: 300px;
 	margin: 0 auto;
 	background: #FFFFFF;
+	box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
 }
 
 #status-message{
@@ -103,9 +108,14 @@ body{
 
 
 #cart {
+	width: 700px;
 	height: auto;
 	margin: 0 auto;
 	background: #FFFFFF;
+	box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
 }
 
 .title {
