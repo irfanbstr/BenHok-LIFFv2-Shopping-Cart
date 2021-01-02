@@ -116,7 +116,7 @@ body{
 	border-radius: 6px;
 }
 
-#smallbtn{
+.smallbtn{
 	width: 100px;
 	height: 30px;
 	background-color: lightgoldenrodyellow;
