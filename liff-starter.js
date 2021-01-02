@@ -72,7 +72,7 @@ function initializeApp() {
 
         liff.getProfile().then(function(profile) {
             var username = profile.displayName;
-            document.getElementById('loginmessage').textContent = `Halo ${username}! Mau makan apa hari ini?`;
+            document.getElementById('loginmessage').textContent = `Halo ${username}! \n Mau makan apa hari ini?`;
 
             const profilePictureDiv = document.getElementById('profilePictureDiv');
             if (profilePictureDiv.firstElementChild) {
