@@ -132,8 +132,8 @@ body{
  
 .description {
 	padding-top: 10px;
-	margin-right: 10px;
-	width: 100px;
+	margin-right: 30px;
+	width: 115px;
 }
  
 .description span {
@@ -155,7 +155,7 @@ body{
 
 .quantity {
   padding-top: 20px;
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
 .quantity input {
