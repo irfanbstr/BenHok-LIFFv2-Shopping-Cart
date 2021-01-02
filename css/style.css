@@ -97,6 +97,16 @@ body{
 	border-radius: 6px;
 }
 
+#profilePictureDiv {
+    text-align: center;
+}
+
+#profileImageDiv {
+    height: 100px;
+    width: 100px;
+}
+
+
 #cart {
 	width: 700px;
 	height: auto;
